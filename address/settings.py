@@ -117,4 +117,4 @@ STATIC_ROOT = 'static/'
 
 TKAI_USER_URL = 'http://localhost:8000'
 if os.getenv('environment') == 'prod':
-    TKAI_USER_URL = 'http://35.232.28.37'
+    TKAI_USER_URL = 'http://35.188.109.50'
