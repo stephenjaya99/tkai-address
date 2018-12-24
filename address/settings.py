@@ -84,8 +84,8 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.mysql' instead of the following.
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'tkai-address',
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -109,7 +109,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 # [START staticurl]
-STATIC_URL = '/static/'
+STATIC_URL = 'http://storage.googleapis.com/tkai-address/static/'
 # STATIC_URL = 'https://storage.googleapis.com/<your-gcs-bucket>/static/'
 # [END staticurl]
 
