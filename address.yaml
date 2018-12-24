@@ -57,8 +57,8 @@ spec:
                   name: cloudsql
                   key: password
             # [END cloudsql_secrets]
-            - name: environtment
-              value: "production"
+            - name: environment
+              value: "prod"
         ports:
         - containerPort: 8080
 
